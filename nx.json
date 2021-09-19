@@ -1,0 +1,42 @@
+{
+  "npmScope": "orbiter",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "projects": {
+    "nx-electron-forge": {
+      "tags": []
+    },
+    "nx-electron-forge-e2e": {
+      "tags": [],
+      "implicitDependencies": ["nx-electron-forge"]
+    }
+  },
+  "workspaceLayout": {
+    "appsDir": "e2e",
+    "libsDir": "packages"
+  }
+}

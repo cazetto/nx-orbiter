@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "nx-electron-forge",
+  "version": "0.0.1",
+  "generators": {
+    "nx-electron-forge": {
+      "factory": "./src/generators/nx-electron-forge/generator",
+      "schema": "./src/generators/nx-electron-forge/schema.json",
+      "description": "nx-electron-forge generator"
+    }
+  }
+}
