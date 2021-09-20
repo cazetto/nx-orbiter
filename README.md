@@ -1,4 +1,4 @@
-
+### *** This repository handles the initiative to create plugins for NX for the Orbiter Desktop project. ***
 
 # Orbiter
 
